@@ -11,7 +11,7 @@ Alt Blog is a basic blog web application. User able to create, edit/update, dele
 
 ## Running Locally
 
-Make sure you have Python 3.8 [installed locally](http://install.python-guide.org).
+Make sure you have Python 3.8 [downloads](https://www.python.org/downloads/).
 
 To start and run the local development server,
 
