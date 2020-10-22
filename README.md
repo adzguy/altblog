@@ -41,3 +41,6 @@ To start and run the local development server,
 ![homepage](homepage.png)
 
 ![postspage](postpage.png)
+
+
+## Sample input
