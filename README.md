@@ -7,7 +7,7 @@ Alt Blog is a basic blog web application. User able to create, edit/update, dele
 * **SQLAlchemy ORM** to be ORM library of choice
 * **SQLite** as database of choice
 * **Python3** and **Flask** as server language and server framework
-* [Bootstrap 4](https://getbootstrap.com/docs/3.4/customize/) for website's frontend
+* [Bootstrap 4](https://getbootstrap.com/docs/3.4/customize/) for frontend
 
 ## Running Locally
 
