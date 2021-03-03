@@ -44,3 +44,5 @@ $ python3 app.py
 ![homepage](homepage.png)
 
 ![postspage](postpage.png)
+
+## Sample input
