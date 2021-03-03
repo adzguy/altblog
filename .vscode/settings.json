@@ -1,4 +1,4 @@
 {
-    "python.pythonPath": "/Users/davron/Desktop/Web Development/flask_tutorial/env/bin/python3",
+    "python.pythonPath": "env/bin/python",
     "git.ignoreLimitWarning": true
 }
