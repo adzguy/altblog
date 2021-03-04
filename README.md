@@ -15,12 +15,22 @@ Make sure you have Python 3.7.7 [downloads](https://www.python.org/downloads/).
 
 To start and run the local development server,
 
-1. Initialize and activate a virtualenv:
+1. Initialize and activate a virtual environment:
+
+On macOS and Linux:
 
 ```
 $ cd YOUR_PROJECT_DIRECTORY_PATH/
-$ virtualenv -p python3 venv
-$ source venv/bin/activate
+$ python3 -m venv env
+$ source env/bin/activate
+```
+
+On Windows:
+
+```
+$ cd YOUR_PROJECT_DIRECTORY_PATH/
+$ py -m venv env
+$ .\env\Scripts\activate
 ```
 
 2. Install the dependencies:
