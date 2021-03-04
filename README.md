@@ -32,7 +32,7 @@ $ pip install -r requirements.txt
 3. Run the development server:
 
 ```
-$ export FLASK_APP=myapp
+$ export FLASK_APP=app
 $ export FLASK_ENV=development # enables debug mode
 $ python3 app.py
 ```
@@ -41,8 +41,6 @@ $ python3 app.py
 
 ## Screenshots
 
-![homepage](homepage.png)
+![homepage](screenshots/homepage.png)
 
-![postspage](postpage.png)
-
-## Sample input
+![postspage](screenshots/postpage.png)
