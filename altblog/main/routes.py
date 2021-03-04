@@ -1,6 +1,7 @@
 from flask import render_template, request, redirect, Blueprint, url_for
 from altblog import db
 from altblog.models import BlogPost
+from altblog.main.forms import PostForm
 
 main = Blueprint('main', __name__)
 
@@ -14,21 +15,22 @@ def index():
 @main.route('/posts', methods=['GET', 'POST'])
 def get_posts():
     posts = BlogPost.query.order_by(BlogPost.date_posted).all()
-    return render_template('posts.html', title='Posts', posts=posts)
+    return render_template('posts.html', title='All Posts', posts=posts)
 
 
 # Create Post
 @main.route('/posts/new_post', methods=['GET', 'POST'])
 def post():
-    if request.method == 'POST':
-        title = request.form['title']
-        author = request.form['author']
-        content = request.form['content']
+    form = PostForm()
+    if form.validate_on_submit():
+        title = form.title.data
+        author = form.author.data
+        content = form.content.data
         db.session.add(BlogPost(title=title, author=author, content=content))
         db.session.commit()
         return redirect(url_for('main.get_posts'))
     else:
-        return render_template('new_post.html')
+        return render_template('new_post.html', title='Create New Post', form=form)
 
 
 # Update/Edit Post
