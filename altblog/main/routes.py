@@ -36,7 +36,6 @@ def post():
 # Update/Edit Post
 @main.route('/posts/edit/<post_id>', methods=['GET', 'POST'])
 def edit(post_id):
-
     post = BlogPost.query.get(post_id)
     if request.method == 'POST':
         post.title = request.form['title']
@@ -56,5 +55,7 @@ def delete(id):
     db.session.commit()
     return redirect(url_for('main.get_posts'))
 
-# if __name__ == "__main__":
-#     main.run(debug=True)
+
+@main.route('/cancel', methods=['GET', 'POST'])
+def cancel():
+    return render_template(url_for('index'))
