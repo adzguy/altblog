@@ -4,7 +4,7 @@ Alt Blog is a blog web application. User able to create, edit/update, delete, or
 
 ## Tech Stack
 
-- **SQLAlchemy ORM** to be ORM library of choice
+- **SQLAlchemy ORM** to be ORM library
 - **SQLite** as database of choice
 - **Python3** and **Flask** as server language and server framework
 - [Bootstrap 4](https://getbootstrap.com/docs/4.3/getting-started/introduction/) for website's frontend
@@ -21,16 +21,16 @@ On macOS and Linux:
 
 ```
 $ cd YOUR_PROJECT_DIRECTORY_PATH/
-$ python3 -m venv env
-$ source env/bin/activate
+$ python3 -m venv [env_name]
+$ source [env_name]/bin/activate
 ```
 
 On Windows:
 
 ```
 $ cd YOUR_PROJECT_DIRECTORY_PATH/
-$ py -m venv env
-$ .\env\Scripts\activate
+$ py -m venv [env_name]
+$ .\[env_name]\Scripts\activate
 ```
 
 2. Install the dependencies:
@@ -44,6 +44,7 @@ $ pip install -r requirements.txt
 .flaskenv file provides development server
 
 ```
+$ flask db upgrade
 $ flask run
 ```
 
